@@ -5,12 +5,12 @@ import { Link } from 'react-router-dom';
 function About(props) {
     const leaders = props.leader.map((leader) => {
         return (
-            <RenderLeader leader = {leader} />
+            <RenderLeader leader={leader} />
         );
     });
 
-    function RenderLeader({leader}) {
-        return(
+    function RenderLeader({ leader }) {
+        return (
             <div key={leader.id} className="col-12 mt-5">
                 <Media tag="li" >
                     <Media left middle>
@@ -24,10 +24,10 @@ function About(props) {
                     </Media>
                 </Media>
             </div>
-            );
-        }
+        );
+    }
 
-    return(
+    return (
         <div className="container">
             <div className="row">
                 <Breadcrumb>
